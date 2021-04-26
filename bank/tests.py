@@ -66,5 +66,5 @@ class BlogTests(TestCase):
 
     def test_post_delete_view(self):
         response = self.client.post(
-            reverse('post_delete', args= '1'))
-            self.assertEqual(response.status_code, 302)
+        reverse('post_delete', args= '1'))
+        self.assertEqual(response.status_code, 302)
