@@ -124,6 +124,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.join('static'))]
 STATIC_ROOT = STATIC_ROOT = str(BASE_DIR.join('staticfiles'))
-STATICFILES_STORAGE = 'whitenoise.storage.compressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
