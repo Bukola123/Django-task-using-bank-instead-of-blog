@@ -21,8 +21,7 @@ Hi {{user.username}}! You are Welcome
         <p>{{post.body}}</p>
     </div>
     {% endfor %}
-<a href="{% url 'login' %}">Log In</a>  
-|
+<a href="{% url 'login' %}">Log In</a>  |
 <a href="{% url 'signup' %}">Sign Up</a>
 {% endif %}
 {% endblock content %}

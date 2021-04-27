@@ -3,9 +3,11 @@ from django.views.generic.edit import (
     CreateView, 
     UpdateView,
     DeleteView,
+      
   
 )
 from django.views.generic import TemplateView
+
 
 from django.urls import reverse_lazy
 
@@ -41,6 +43,7 @@ class BlogDeleteView(DeleteView):
 
 class HomePageView(TemplateView):
     template_name = 'home.html'
+
 
 
     
