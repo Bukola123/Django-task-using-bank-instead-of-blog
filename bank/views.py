@@ -3,6 +3,7 @@ from django.views.generic.edit import (
     CreateView, 
     UpdateView,
     DeleteView,
+    
       
   
 )
@@ -40,6 +41,9 @@ class BlogDeleteView(DeleteView):
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
+
+
+
 
 class HomePageView(TemplateView):
     template_name = 'home.html'

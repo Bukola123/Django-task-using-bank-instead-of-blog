@@ -45,3 +45,7 @@ header h1 a {
 .post-entry h2 a:hover {
     color: red;
 }
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}

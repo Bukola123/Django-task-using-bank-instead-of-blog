@@ -5,7 +5,19 @@
         <h2>{{ post.title }}</h2>
         <p>{{ post.body }}</p>
     </div>
-
+    <hr>
+    {% for comment in post.comments.all %}
+        <div class="comment">
+            <div class="date">{{ comment.created_date }}</div>
+            <strong>{{ comment.author }}</strong>
+            <p>{{ comment.text|linebreaks }}</p>
+        </div>
+    {% empty %}
+        <p>No comments here yet :(</p>
+    {% endfor %}
+    
     <p><a href="{% url 'post_edit' post.pk %}">+ Edit Blog Post</a></p>
     <p><a href="{% url 'post_delete' post.pk %}">+ Delete Blog Post</a></p>
+    <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>
+    
 {% endblock content %}
