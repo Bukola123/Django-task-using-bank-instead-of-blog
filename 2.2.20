@@ -1,0 +1,37 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: C:\Users\JUMSD-U283\anaconda3
+
+  added / updated specs:
+    - django
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    conda-4.10.1               |   py38haa95532_1         2.9 MB
+    openssl-1.1.1h             |       he774522_0         4.8 MB
+    ------------------------------------------------------------
+                                           Total:         7.7 MB
+
+The following packages will be UPDATED:
+
+  conda              conda-forge::conda-4.10.1-py38haa244f~ --> pkgs/main::conda-4.10.1-py38haa95532_1
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  openssl                                       conda-forge --> pkgs/main
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages
+conda-4.10.1         | 2.9 MB    |            |   0% conda-4.10.1         | 2.9 MB    |            |   1% conda-4.10.1         | 2.9 MB    | 2          |   2% conda-4.10.1         | 2.9 MB    | 4          |   5% conda-4.10.1         | 2.9 MB    | #          |  10% conda-4.10.1         | 2.9 MB    | #8         |  18% conda-4.10.1         | 2.9 MB    | ###8       |  38% conda-4.10.1         | 2.9 MB    | #####8     |  59% conda-4.10.1         | 2.9 MB    | #######9   |  80% conda-4.10.1         | 2.9 MB    | ########## | 100% conda-4.10.1         | 2.9 MB    | ########## | 100% 
+openssl-1.1.1h       | 4.8 MB    |            |   0% openssl-1.1.1h       | 4.8 MB    |            |   0% openssl-1.1.1h       | 4.8 MB    | 3          |   4% openssl-1.1.1h       | 4.8 MB    | #7         |  18% openssl-1.1.1h       | 4.8 MB    | ###4       |  35% openssl-1.1.1h       | 4.8 MB    | #####      |  51% openssl-1.1.1h       | 4.8 MB    | #####7     |  58% openssl-1.1.1h       | 4.8 MB    | ########## | 100% openssl-1.1.1h       | 4.8 MB    | ########## | 100% 
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
