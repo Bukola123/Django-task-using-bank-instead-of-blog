@@ -127,9 +127,8 @@ USE_TZ = True
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.join('static'))]
-STATIC_ROOT = STATIC_ROOT = str(BASE_DIR.join('staticfiles'))
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DISABLE_COLLECTSTATIC= 1
