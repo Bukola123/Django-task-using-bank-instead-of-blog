@@ -45,6 +45,7 @@ class BlogDeleteView(DeleteView):
 
 
 
+
 class HomePageView(TemplateView):
     template_name = 'home.html'
 
