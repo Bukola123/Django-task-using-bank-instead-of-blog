@@ -25,7 +25,7 @@ SECRET_KEY = 'wmqdjb6c$zbif0rxg=^uv_d(!@%u#yv-1=9w60(b*!$whvp=7k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.hereokuapp.com','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
