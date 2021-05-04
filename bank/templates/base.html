@@ -1,13 +1,13 @@
 <! DOCTYPE html>
 <html>
-<head>
+<header>
     <meta charset= "utf-8">
     <title>{% block title %}Welcome to Bank{% endblock title %}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS-->>
     <link href="https://stackpath.bootstrapcdn.com/..." rel="stylesheet">
-</head>
+</header>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="{% url 'home' %}">Welcome to Bank</a>
@@ -42,6 +42,8 @@
                 
                 <a href="{% url 'login' %}" class="btn btn-outline-secondary">
                 Log In</a>
+                <a href="{% url 'password_reset' %}" class="btn btn-outline-secondary">
+                    Forgot Password</a>
                 <a href="{% url 'signup' %}" class="btn btn-primary ml-2">
                 Sign up</a>
             </form>
@@ -59,6 +61,9 @@
                     <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
                     <p>{{ post.text|linebreaksbr }}</p>
                     <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>
+
+                    
+                    
                 </div>
         {% endfor %}
         {% endblock content %}
