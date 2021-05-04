@@ -5,6 +5,7 @@ from django.views.generic.edit import (
     UpdateView,
     DeleteView,
     
+    
       
   
 )
@@ -16,6 +17,7 @@ from django.urls import reverse_lazy
 from .models import Post
 
 
+
 class BlogListView(ListView):
     model = Post
     template_name = 'home.html'
@@ -24,6 +26,7 @@ class BlogListView(ListView):
 class BlogDetailView(DetailView):
     model = Post
     template_name = 'post_detail.html'
+
 
 
 class BlogCreateView(LoginRequiredMixin,CreateView):
@@ -54,6 +57,7 @@ class BlogDeleteView(LoginRequiredMixin,UserPassesTestMixin, DeleteView):
     def test_func(self):
         obj = self.get_object()
         return obj.author == self.request.user
+
 
 
 
