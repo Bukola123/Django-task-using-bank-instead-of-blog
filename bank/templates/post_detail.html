@@ -6,6 +6,7 @@
         <p>{{ post.body }}</p>
     </div>
     <p>No comments here yet : </p>
+    <a href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
     
     {% if user.is_authenticated %}
         <p><a href="{% url 'post_edit' post.pk %}">+ Edit Post</a></p>
